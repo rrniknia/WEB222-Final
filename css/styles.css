@@ -1,0 +1,200 @@
+html,
+body {
+    /* remove gaps between elements and the edges of the page */
+    margin: 0;
+}
+body {
+    padding: 0;
+    min-width: 100%;
+    margin: 0;
+}
+article {
+    padding: 2%;
+    margin: auto;
+    width: 95vw;
+    max-width: 1024px;
+    min-height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+header {
+    margin: 0;
+    max-width: 100vw;
+    padding-top: 2%;
+    background-color: #1C3879;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+form {
+    background-color: #f9f5eb;
+    box-shadow: 10px 5px 5px grey;
+    margin: 2%;
+    padding: 2%;
+    width: 50%;
+    max-width: 512px;
+    display: inline-block;
+    text-align: left;
+}
+form input,
+form textarea {
+    margin-bottom: 10%;
+    border: 2px solid #c6c0b2;
+    width: 100%;
+}
+form textarea:focus {
+    border: 2px solid #1C3879;
+}
+form input:focus {
+    border: 2px solid #1C3879;
+    background-color: #607EAA;
+    color:white;
+}
+form input[type=radio] {
+    width: auto;
+}
+form input[type=submit],
+form input[type=reset] {
+    margin-bottom: 20px;
+}
+.radiolabel {
+    display: inline;
+    margin-right: 20px;
+}
+#header-buttons {
+    background-color: #607EAA;
+    width: 99vw;
+    max-width: 99vw;
+    margin-top: 2%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#button-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 512px;
+}
+.double-column {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 5%;
+    width: 50%;
+    max-width: 512px;
+}
+.article-container {
+    display: flex;
+}
+.color1 {
+    background-color: #EAE3D2;
+    border-bottom: 2px solid #1C3879;
+}
+.color2 {
+    background-color: #f9f5eb;
+    border-bottom: 2px solid #1C3879;
+}
+.education-card {
+    background-color: #eae3d2;
+    box-shadow: 10px 5px 5px grey;
+    margin: 10px;
+    width: 50%;
+    max-width: 512px;
+    display: flex;
+    flex-direction: row;
+}
+.education-image {
+    min-width: 20%;
+    max-width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+}
+.education-icon {
+    width: 64px;
+    height: 64px;
+}
+.education-info {
+    width: auto;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    text-align: left;
+}
+.attribution {
+    font-size: 10px;
+}
+
+#hiringDiv {
+    display:none;
+}
+
+header h1,
+header h2 {
+    color: white;
+    text-align: center;
+    margin: 0;
+}
+h1 {
+    font-size: 48px;
+}
+h2 {
+    font-size: 28px;
+}
+h3 {
+    font-size: 22px;
+    margin: 0;
+}
+h4 {
+    font-size: 18px;
+    margin: 0;
+}
+ul {
+    list-style: none;
+    text-align: left;
+}
+#header-img {
+    margin: auto;
+    max-height: 12em;
+    max-width:  12em;
+    border-radius: 180px;
+    border: 5px solid white;
+}
+footer {
+    border-top: 2px solid white;
+    background-color:#1C3879;
+    color: white;
+    text-align: center;
+    text-justify: auto;
+    margin-bottom: -24px;
+}
+
+@media all and (max-width: 400px) {
+    header h1 {
+        font-size: 22pt;
+    }
+    header h2 {
+        font-size: 16pt;
+    }
+    .education-card {
+        width: 95%;
+        max-width: 512px;
+    }
+    .double-column {
+        width: 95%;
+    }
+    form {
+        width: 90%;
+        max-width: 512px;
+    }
+}

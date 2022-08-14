@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="author" content="Ryan Niknia"/>
+        <meta name="studentID" content="165849217"/>
+        <meta name="course" content="WEB222"/>
+        <meta name="submissionDate" content="08-12-2022"/>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+
+        <title>WEB222 Final Assessment</title>
+
+        <link rel="stylesheet" href="./css/normalize.css"/>
+        <link rel="stylesheet" href="./css/sakura-earthly.css"/>
+        <link rel="stylesheet" href="./css/styles.css"/>
+    </head>
+    <body>
+        <!-- Header information and navbar here -->
+        <header>
+            <img src="./images/ryan_profile.jpg" id="header-img"/>
+            <h1>Ryan Niknia</h1>
+            <h2>Senior Software Developer</h2>
+            <div id="header-buttons">
+                <div id="button-container">
+                    <a href="Ryan Niknia - Resume.docx" target="_blank"><button>Resume</button></a>
+                    <a href="#contact"><button>Contact Me</button></a>
+                </div>
+            </div>
+        </header>
+        
+        <!-- Page main content starts here -->
+        <div class="article-container, color1">
+            <article id="about-me">
+                <h2>About Me & Academic Honesty</h2>
+                <p>Hi! I'm <strong>Ryan Niknia</strong>, a student enrolled in the Computer Programming and Analysis (CPA) course 
+                    at Seneca College's Newnham Campus. I'm currently nearing the end of my second semester in the program, 
+                    and I've had a great time learning about things like web development and design 
+                    with HTML, CSS and JavaScript, software programming in C++, database programming and management with SQL, 
+                    and Cisco networking devices.</p>
+                <p><em>I declare that my assessment is wholly my own work in accordance with Seneca Academic Policy. 
+                    No part of this assessment has been copied manually or electronically from any other source (including web sites) 
+                    except for the information supplied by the WEB222 instructors and / or made available in this assessment for my use. 
+                    I also declare that no part of this assignment has been distributed to other students.</em></p>
+                <h2>Basic Information</h2>
+                <div class="double-column">
+                    <ul>
+                        <li><strong>AGE:</strong></li>
+                        <li><strong>EMAIL:</strong></li>
+                        <li><strong>LANGUAGE:</strong></li>
+                        <li><strong>CLASS SECTION:</strong></li>
+                        <li><strong>STUDENT ID:</strong></li>
+                        <li><strong>INSTRUCTOR:</strong></li>
+                    </ul>
+                    <ul>
+                        <li><strong>24</strong></li>
+                        <li><strong>rrniknia@gmail.com</strong></li>
+                        <li><strong>English</strong></li>
+                        <li><strong>NJJ</strong></li>
+                        <li><strong>165849217</strong></li>
+                        <li><strong>Noman Atique</strong></li>
+                    </ul>
+                </div>
+            </article>
+        </div>
+        <div class="article-container, color2">
+            <article id="education">
+                <h2>Education</h2>
+                <div class="education-card">
+                    <div class="education-image">
+                        <img src="images/icons8-school-building-64.png" class="education-icon">
+                        <p class="attribution"><a target="_blank" href="https://icons8.com/icon/uT0SrAcIUX6W/school-building">School Building</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a></p>
+                    </div>
+                    <div class="education-info">
+                        <h3>Seneca College</h3>
+                        <h4>Computer Programming and Analysis - Advanced Diploma</h4>
+                        <p>2022-2026 (expected)</p>
+                        <p>Software and Web development</p>
+                    </div>
+                </div>
+
+                <div class="education-card">
+                    <div class="education-image">
+                        <img src="images/icons8-school-building-64.png" class="education-icon">
+                        <p class="attribution"><a target="_blank" href="https://icons8.com/icon/uT0SrAcIUX6W/school-building">School Building</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a></p>
+                    </div>
+                    <div class="education-info">
+                        <h3>Humber College</h3>
+                        <h4>Networking and Support Technician - Diploma</h4>
+                        <p>2019-2021</p>
+                        <p>Troubleshooting and Technical Support Training</p>
+                    </div>
+                </div>
+                
+                <div class="education-card">
+                    <div class="education-image">
+                        <img src="images/icons8-school-building-64.png" class="education-icon">
+                        <p class="attribution"><a target="_blank" href="https://icons8.com/icon/uT0SrAcIUX6W/school-building">School Building</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a></p>
+                    </div>
+                    <div class="education-info">
+                        <h3>York University</h3>
+                        <h4>Accounting - Bachelor's Degree</h4>
+                        <p>2016-2018</p>
+                        <p>Business, Financing and Accounting</p>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <div class="article-container, color1">
+            <article id="contact">
+                <h2>Contact Me</h2>
+                <form method="post" action="https://httpbin.org/post">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="address">Address:</label>
+                    <input type="text" id="address" name="address" required>
+
+                    <label for="city">City:</label>
+                    <input list="city-choice" id="city" name="city" required>
+
+                    <datalist id="city-choice">
+                        <option value="Toronto">
+                        <option value="Vancouver">
+                        <option value="Calgary">
+                        <option value="Montreal">
+                        <option value="Quebec City">
+                        <option value="Edmonton">
+                        <option value="Victoria">
+                        <option value="Yellowknife">
+                        <option value="Whitehorse">
+                        <option value="Iqaluit">
+                    </datalist>
+
+                    <label for="postalcode">Postal Code:</label>
+                    <input type="text" id="postalcode" pattern="^[ABCEGHJ-NPRSTVXY]\d[ABCEGHJ-NPRSTV-Z][ -]?\d[ABCEGHJ-NPRSTV-Z]\d$" 
+                    title="Must be a valid Canadian postal code" name="postalcode" required>
+
+                    <label>Which type of query do you have?</label>
+                    <input type="radio" name="querytype" id="question" value="question" required>
+                    <label for="question" class="radiolabel">Question</label>
+
+                    <input type="radio" name="querytype" id="comment" value="comment" required>
+                    <label for="comment" class="radiolabel">Comment</label>
+                    
+                    <input type="radio" name="querytype" id="hiring" value="hiring" required>
+                    <label for="hiring" class="radiolabel">Hiring</label>
+
+                    <div id="hiringDiv">
+                        <label for="hiringAmt">What salary are you prospectively offering? ($CAD)</label>
+                        <input type="number" id="hiringAmt" name="hiringAmt"/>
+                    </div>
+
+                    <label for="message">Enter your message below:</label>
+                    <textarea id="message" rows="5" cols="40" name="message" required></textarea>
+
+                    <input type="submit" action="https://httpbin.org/post">
+                    <input type="reset">
+                </form>
+            </article>
+        </div>
+
+        <footer id="footer">
+            <p>Website created by Ryan Niknia for WEB222 - August 2022</p>
+        </footer>
+    </body>
+    
+    <script src="script.js"></script>
+</html>
